@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduMaster beginner-friendly online learning website">
+  <title>EduMaster | Learn New Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <a href="#home" class="logo"><span>◆</span> EduMaster</a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search courses">⌕</button>
+        <a href="#contact" class="login">Log In</a>
+        <a href="#courses" class="btn btn-primary">Sign Up Free</a>
+      </div>
+    </nav>
+
+    <div class="search-wrap container">
+      <input id="searchBox" class="search-box" type="search" placeholder="Search courses...">
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="tag">Welcome to EduMaster</p>
+        <h1>Learn New Skills.<br>Advance Your <span>Career.</span></h1>
+        <p class="lead">
+          Beginner-friendly online courses designed to help you learn practical skills
+          step by step and build confidence.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+          <button class="btn btn-outline" id="watchBtn">▶ Watch Preview</button>
+        </div>
+
+        <div class="social-proof">
+          <div class="avatar-stack" aria-label="Students">
+            <span>JS</span><span>AK</span><span>RM</span><span>SK</span>
+          </div>
+          <div><strong>10K+</strong><small>Happy Students</small></div>
+          <div class="divider"></div>
+          <div><span class="stars">★★★★★</span> <strong>4.9</strong><small>1,200+ Reviews</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          class="hero-photo"
+          src="https://images.unsplash.com/photo-1758612898304-1a6bb546ac44?auto=format&fit=crop&fm=jpg&q=80&w=1400"
+          alt="Student learning with a laptop at home">
+        <div class="stat-card s1"><small>Students</small><strong>12,500+</strong></div>
+        <div class="stat-card s2"><small>Certificates</small><strong>8,200+</strong></div>
+        <div class="stat-card s3"><small>Courses</small><strong>120+</strong></div>
+        <div class="stat-card s4"><small>Success Rate</small><strong>98%</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section features" id="why">
+    <div class="container">
+      <p class="eyebrow">Why choose us</p>
+      <h2>The Best Learning Experience</h2>
+
+      <div class="grid-4">
+        <article class="card feature">
+          <span class="ico purple">🎓</span>
+          <h3>Expert Instructors</h3>
+          <p>Learn practical skills from instructors who explain concepts clearly.</p>
+        </article>
+
+        <article class="card feature">
+          <span class="ico green">⏱</span>
+          <h3>Learn at Your Pace</h3>
+          <p>Study whenever you want and repeat lessons whenever you need.</p>
+        </article>
+
+        <article class="card feature">
+          <span class="ico orange">🏆</span>
+          <h3>Certificates</h3>
+          <p>Complete courses and show your new skills with a certificate.</p>
+        </article>
+
+        <article class="card feature">
+          <span class="ico blue">💬</span>
+          <h3>Beginner Support</h3>
+          <p>Simple explanations and support help you learn without confusion.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Popular courses</p>
+          <h2>Start Learning Today</h2>
+        </div>
+        <button class="btn btn-ghost" id="allCoursesBtn">View All Courses</button>
+      </div>
+
+      <p id="noResults" class="no-results" hidden>No courses match your search.</p>
+
+      <div class="grid-4" id="courseGrid">
+        <article class="card course" data-course="web development html css javascript">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?auto=format&fit=crop&fm=jpg&q=80&w=1000" alt="Web developer coding on a laptop" loading="lazy">
+            <span class="course-label">Web Development</span>
+            <button class="play" aria-label="Preview Web Development course">▶</button>
+          </div>
+          <div class="body">
+            <small class="cat">Development</small>
+            <h3>Web Development for Beginners</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.9 (520)</p>
+            <p class="meta"><span>45 Lessons</span><span>12.3K Students</span></p>
+            <p class="price">₹499</p>
+          </div>
+        </article>
+
+        <article class="card course" data-course="ui ux design figma">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1778735940467-1335c201966d?auto=format&fit=crop&fm=jpg&q=80&w=1000" alt="Student studying with laptop and notebook" loading="lazy">
+            <span class="course-label">UI/UX Design</span>
+            <button class="play" aria-label="Preview UI UX course">▶</button>
+          </div>
+          <div class="body">
+            <small class="cat">Design</small>
+            <h3>UI/UX Design Complete Course</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.9 (430)</p>
+            <p class="meta"><span>38 Lessons</span><span>9.8K Students</span></p>
+            <p class="price">₹399</p>
+          </div>
+        </article>
+
+        <article class="card course" data-course="javascript programming coding">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1778146476147-5f8d4bd03c79?auto=format&fit=crop&fm=jpg&q=80&w=1000" alt="Laptop and phone with coding software" loading="lazy">
+            <span class="course-label">JavaScript</span>
+            <button class="play" aria-label="Preview JavaScript course">▶</button>
+          </div>
+          <div class="body">
+            <small class="cat">Programming</small>
+            <h3>JavaScript from Zero to Project</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.8 (380)</p>
+            <p class="meta"><span>42 Lessons</span><span>8.4K Students</span></p>
+            <p class="price">₹449</p>
+          </div>
+        </article>
+
+        <article class="card course" data-course="online learning study skills">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1758612898304-1a6bb546ac44?auto=format&fit=crop&fm=jpg&q=80&w=1000" alt="Student studying online with laptop" loading="lazy">
+            <span class="course-label">Study Skills</span>
+            <button class="play" aria-label="Preview Study Skills course">▶</button>
+          </div>
+          <div class="body">
+            <small class="cat">Learning</small>
+            <h3>Online Learning & Study Skills</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.8 (610)</p>
+            <p class="meta"><span>25 Lessons</span><span>15.2K Students</span></p>
+            <p class="price">₹299</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="stats-bar">
+        <div><strong data-target="12500">0</strong><small>Students Enrolled</small></div>
+        <div><strong data-target="120">0</strong><small>Courses Available</small></div>
+        <div><strong data-target="98">0%</strong><small>Success Rate</small></div>
+        <div><strong data-target="50">0+</strong><small>Expert Instructors</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <p class="eyebrow">Testimonials</p>
+      <h2>What Our Students Say</h2>
+
+      <div class="grid-3">
+        <figure class="card quote">
+          <blockquote>“The lessons are simple and practical. I finally understood HTML and CSS.”</blockquote>
+          <figcaption><span class="person-avatar">S</span><div><strong>Sarah</strong><small>Web Developer</small></div><span class="stars">★★★★★</span></figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <blockquote>“I liked the beginner-friendly explanations and the small projects.”</blockquote>
+          <figcaption><span class="person-avatar">M</span><div><strong>Michael</strong><small>UI/UX Designer</small></div><span class="stars">★★★★★</span></figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <blockquote>“The course helped me practice JavaScript instead of only watching videos.”</blockquote>
+          <figcaption><span class="person-avatar">D</span><div><strong>David</strong><small>Frontend Learner</small></div><span class="stars">★★★★★</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEWSLETTER ================= -->
+  <section class="container" id="contact">
+    <form class="newsletter" id="newsletter">
+      <div>
+        <h2>Get Beginner Learning Tips</h2>
+        <p>Receive new course updates and simple web-development tips.</p>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </div>
+      <div class="nl-field">
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo"><span>◆</span> EduMaster</a>
+        <p>Learn practical skills with beginner-friendly lessons.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#why">About</a>
+        <a href="#testimonials">Reviews</a>
+      </div>
+      <div>
+        <h4>Learning</h4>
+        <a href="#courses">Web Development</a>
+        <a href="#courses">JavaScript</a>
+        <a href="#courses">UI/UX Design</a>
+        <a href="#courses">Study Skills</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@edumaster.com</p>
+        <p>+91 98765 43210</p>
+        <p>Madurai, Tamil Nadu</p>
+      </div>
+    </div>
+    <p class="copy container">© 2026 EduMaster. Beginner-friendly learning website.</p>
+  </footer>
+
+  <!-- Preview popup -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-icon">▶</div>
+      <h3 id="modalTitle">Course Preview</h3>
+      <p>This is a beginner-friendly course preview. You can connect this popup to a real video later.</p>
+      <button class="btn btn-primary" id="modalStart">Start Learning</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
